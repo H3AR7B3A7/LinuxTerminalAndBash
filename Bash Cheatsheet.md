@@ -40,6 +40,8 @@ List content:
 > -C -b  
 > -R  
 
+![Chmod](img/chmod.png)
+
 >dir
 
 #### Print working directory:

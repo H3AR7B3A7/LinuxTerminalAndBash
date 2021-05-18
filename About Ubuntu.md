@@ -15,3 +15,6 @@ configuration and installation of software packages, either from precompiled fil
 ### Update APT
 
 >sudo apt-get update
+
+*Sudo temporarily elevates the user asking for a password to run something as a super user.
+

@@ -40,6 +40,8 @@ List content:
 > -C -b  
 > -R
 
+>ll
+
 >dir
 
 #### Print working directory:
@@ -47,6 +49,17 @@ List content:
 
 #### Change directory
 >cd
+
+#### Print files to screen
+>cat
+
+#### Print last X lines of file
+>tail  
+> file.txt  
+> -n 1
+
+#### Print file in pages
+>less
 
 ### Creation / Alteration
 
@@ -68,6 +81,13 @@ To drop elevation:
 
 #### Create file
 >touch  
+> file.txt
+
+#### Edit file
+>vi  
+> file.txt
+
+>nano  
 > file.txt
 
 ### Installations

@@ -38,9 +38,7 @@ List content:
 > /bin/p*  
 > -l -G  
 > -C -b  
-> -R  
-
-![Chmod](img/chmod.png)
+> -R
 
 >dir
 
@@ -50,9 +48,29 @@ List content:
 #### Change directory
 >cd
 
+### Creation / Alteration
+
+#### Elevating to super user
+>sudo su
+
+To drop elevation:
+>exit
+
+#### Changing file rights
+>chmod  
+> 777 file.txt
+
+![Chmod](img/chmod.png)
+
+#### Changing owner
+>chown  
+> username
+
+#### Create file
+>touch  
+> file.txt
+
 ### Installations
 
 #### Installing Git
 >sudo apt-get install git
-
->git --version

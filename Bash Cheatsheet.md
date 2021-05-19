@@ -87,6 +87,8 @@ To drop elevation:
 >vi  
 > file.txt
 
+[Vim cheatsheet](https://vim.rtorr.com)
+
 >nano  
 > file.txt
 

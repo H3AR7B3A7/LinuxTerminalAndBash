@@ -16,7 +16,7 @@ a limited, well-defined function. A unified filesystem (the Unix filesystem) and
 mechanism known as "pipes" serve as the main means of communication, and a shell scripting and command language
 (the Unix shell) is used to combine the tools to perform complex workflows.
 
-Linux's distributions are often called Unix-like OS because they share the same philosophy.
+Debian and consequently Ubuntu are often called Unix-like OS because they share the same Unix philosophy.
 
 ## Advanced Packaging Tool
 

@@ -62,6 +62,7 @@ List content:
 #### Print file in pages
 >less
 
+
 ### Creation / Alteration
 
 #### Elevating to super user
@@ -93,10 +94,22 @@ To drop elevation:
 >nano  
 > file.txt
 
+
 ### Installations
 
 #### Installing Git
 >sudo apt-get install git
+
+#### Installing Java
+[Download Oracle JDK for Debian](https://www.oracle.com/java/technologies/javase-downloads.html)
+
+>sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk-16.0.1/bin/java 1
+
+>sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk-16.0.1/bin/javac 1
+
+Or just check your version and follow instructions for OpenJDK:
+>java --version
+
 
 ### Command Chaining Examples
 Find everything in /var/log starting with syslog of type file, print with null chars for new line and individually run each with an elevated command to grant read permission to all users.
@@ -110,6 +123,7 @@ Find everything in /var/log starting with syslog of type file, print with null c
 
 Get IP-addresses from network interfaces, in the first result merge spaces, cut in string parts on the spaces and give me the 3d string.
 >ifconfig | grep "inet " | head -n 1 | tr -s ' ' | cut -d ' ' -f 3
+
 
 ### Running Scripts
 

@@ -97,3 +97,35 @@ To drop elevation:
 #### Installing Git
 >sudo apt-get install git
 
+### Command Chaining Examples
+Find everything in /var/log starting with syslog of type file, print with null chars for new line and individually run each with an elevated command to grant read permission to all users.
+>find /var/log/syslog* -type f -print0 | xargs -0 sudo chmod a+r
+
+Find everything in /var/log starting with syslog and ending on .gz of type file, print with null chars for new line and individually run each with an elevated command to unzip.
+>find /var/log/syslog*.gz -type f -print0 | xargs -0 sudo gunzip
+
+Find everything in /var/log starting with syslog of type file, print with null chars for new line and individually run each to concatenate in one long string and look for matching lines for "NetworkManager" that are warnings.
+>find /var/log/syslog* -type f -print0 | xargs -0 cat | grep "NetworkManager.*warn"
+
+Get IP-addresses from network interfaces, in the first result merge spaces, cut in string parts on the spaces and give me the 3d string.
+>ifconfig | grep "inet " | head -n 1 | tr -s ' ' | cut -d ' ' -f 3
+
+### Scripts
+
+Anything you can normally run on the command line can also be put into a script for repeated use.
+
+#### Examples
+
+```
+#!/bin/bash
+
+originalAddress=$(   ifconfig | 
+                    grep "inet " | 
+                    head -n 1 | 
+                    tr -s ' ' | 
+                    cut -d ' ' -f 3)
+                    
+echo $originalAddress
+
+echo $originalAddress >> ~/ip.txt
+```

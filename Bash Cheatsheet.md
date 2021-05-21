@@ -57,6 +57,7 @@ List content:
 >tail  
 > file.txt  
 > -n 1
+> -f
 
 #### Print file in pages
 >less
@@ -110,12 +111,27 @@ Find everything in /var/log starting with syslog of type file, print with null c
 Get IP-addresses from network interfaces, in the first result merge spaces, cut in string parts on the spaces and give me the 3d string.
 >ifconfig | grep "inet " | head -n 1 | tr -s ' ' | cut -d ' ' -f 3
 
-### Scripts
+### Running Scripts
 
 Anything you can normally run on the command line can also be put into a script for repeated use.
+A user will not have permission to run a saved script by default. We need to grant it first:
 
-#### Examples
+>chmod a+x script.sh
 
+To run the script:
+>./script.sh
+
+To schedule scripts with CRON:
+>crontab -e
+
+Edit the file to run a script every minute:
+```
+* * * * * ~/script.sh
+```
+
+#### Example Scripts
+
+Print IP:
 ```
 #!/bin/bash
 
@@ -124,8 +140,28 @@ originalAddress=$(   ifconfig |
                     head -n 1 | 
                     tr -s ' ' | 
                     cut -d ' ' -f 3)
-                    
-echo $originalAddress
 
-echo $originalAddress >> ~/ip.txt
+echo $originalAddress >> ~/Desktop/ip.txt
 ```
+
+Print date and IP in an endless loop:
+```
+#!/bin/bash
+
+while [ : ]
+do
+
+	originalAddress=$(   ifconfig | 
+		            grep "inet " | 
+		            head -n 1 | 
+		            tr -s ' ' | 
+		            cut -d ' ' -f 3)
+
+	echo "$(date) $originalAddress" >> ~/Desktop/ip.txt
+	
+	sleep 10
+done
+```
+To watch the output updating every 10s:
+>tail ip.txt -f
+

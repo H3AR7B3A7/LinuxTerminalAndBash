@@ -15,6 +15,7 @@ Or the version of the software providing a specific command, if any:
 > command --version  
 > command --v
 
+
 ## Shortcuts
 
 Arrow up-down: Navigate command history
@@ -118,7 +119,20 @@ To drop elevation:
 > file.txt
 
 
-### Command Chaining Examples
+## Command Chaining
+
+Append contents of group filtering only lines with username to file.
+>cat /etc/group | grep name >> file
+
+Overwrite contents of group filtering only lines with username to file.
+>cat /etc/group | grep name > file
+
+Cut contents using colon as field delimiter keeping the 3d field and sorting them in natural order.
+>cut -d: -f3 /etc/group | sort -n
+
+Cut contents using colon as field delimiter keeping the 3d field and sorting them in descending order.
+>cut -d: -f3 /etc/group | sort -rn
+
 Find everything in /var/log starting with syslog of type file, print with null chars for new line and individually run each with an elevated command to grant read permission to all users.
 >find /var/log/syslog* -type f -print0 | xargs -0 sudo chmod a+r
 
@@ -132,7 +146,14 @@ Get IP-addresses from network interfaces, in the first result merge spaces, cut 
 >ifconfig | grep "inet " | head -n 1 | tr -s ' ' | cut -d ' ' -f 3
 
 
-### Running Scripts
+## Standard Streams
+
+- Standard Input (stdin): 1
+- Standard Output (stdout): 1
+- Standard Error (stderr): 2
+
+
+## Running Scripts
 
 Anything you can normally run on the command line can also be put into a script for repeated use.
 A user will not have permission to run a saved script by default. We need to grant it first:
@@ -150,7 +171,7 @@ Edit the file to run a script every minute:
 * * * * * ~/script.sh
 ```
 
-#### Example Scripts
+### Example Scripts
 
 Print IP:
 ```

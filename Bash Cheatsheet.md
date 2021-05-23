@@ -26,6 +26,8 @@ Or the version of the software providing a specific command, if any:
 >hostname
 
 #### Manual:
+>sudo apt install man-db
+
 >man  
 > ls  
 > ...
@@ -70,6 +72,10 @@ List content:
 
 To drop elevation:
 >exit
+
+#### Non-Interactive Download
+>wget
+> wordpress.org/latest.tar.gz
 
 #### Changing file rights
 >chmod  

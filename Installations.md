@@ -42,4 +42,7 @@ Updating:
 
 >sudo npm install nodejs@latest -g
 
+### NGINX
+>sudo apt-get install nginx
+
 

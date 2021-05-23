@@ -1,4 +1,4 @@
-# Bash Cheatsheet
+# Bash Shell Cheatsheet
 
 Bash commands with some of their arguments on the consecutive lines.
 

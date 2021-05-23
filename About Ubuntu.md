@@ -24,3 +24,19 @@ A free-software user interface that works with core libraries to handle the inst
 Debian, Ubuntu, and related Linux distributions.
 APT simplifies the process of managing software on Unix-like computer systems by automating the retrieval,
 configuration and installation of software packages, either from precompiled files or by compiling source code.
+
+## Ubuntu Server
+
+Like other distributions, Ubuntu comes in two editions:
+- Desktop
+- Server
+
+The server edition has no GUI, instead it only uses the shell.
+It is a lean (1 GB of disc space) efficient operating system, ideally only rarely requiring updates.
+It has the same release schedule, but only LTS releases should be considered for server stability.
+
+The installation differs significantly from the desktop version. However, it offers a lot of build in functionality,
+like security and different software (to set up: webserver, mail server, files server, ...).
+
+OpenSSH allows for controlling the server securely from a different machine.
+

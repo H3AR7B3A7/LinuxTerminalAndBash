@@ -87,6 +87,12 @@ List content:
 #### Print file in pages
 >less
 
+#### List loaded modules
+>lsmod
+
+#### Load module
+>modprobe name
+
 
 ### Creation / Alteration
 
@@ -148,6 +154,11 @@ Tar:
 >tar -xvf name.tgz
 
 *More info: [Zip Format Differences](https://upengareri.github.io/compression_and_archiving/)
+
+
+## Command Insertion
+List kernel module files for current kernel version.
+>ls /lib/modules\`uname -r\`
 
 
 ## Command Chaining

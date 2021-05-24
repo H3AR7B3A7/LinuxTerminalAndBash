@@ -50,10 +50,36 @@ Or the version of the software providing a specific command, if any:
 > ls  
 > ...
 
+#### Network routing:
+>ip rout show
 
-### Navigation
+#### Check for DHCP server in network:
+>sudo dhclient
 
-List content:
+#### Lookup IP address:
+>ip addr
+
+#### Network interfaces and usage
+>netstat -i
+
+#### Open and listening ports
+>netstat -l
+
+>ss -i
+
+#### Get DNS ip
+>host google.com
+
+#### Check if network address is live
+>ping 8.8.8.8
+
+#### Current DNS configurations
+>systemd-resolve --status
+
+
+### Navigate & Open
+
+#### List content:
 >ls  
 > /bin/p*  
 > -l -G  
@@ -94,7 +120,7 @@ List content:
 >modprobe name
 
 
-### Creation / Alteration
+### Create & Alter
 
 #### Elevating to super user
 >sudo su

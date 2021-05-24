@@ -18,19 +18,19 @@ Or the version of the software providing a specific command, if any:
 
 ## Shortcuts
 
-Arrow up-down: Navigate command history
-Tab: Autocomplete
-Ctrl + L: Clear
-Ctrl + C: Kill current running task
-Ctrl + D: Exit shell
-Ctrl + Z: Current running task to background
-Alt + F: Move cursor forward one word
-Alt + B: Move cursor back one word
-Esc + T: Swap last two words before cursor
-Ctrl + A: Go to the beginning of the line
-Ctrl + E: Go to the end of the line
-Ctrl + W: Delete word before cursor
-Ctrl + K: Clear line behind cursor
+**Arrow Up / Down** : Navigate command history  
+**Tab** : Autocomplete  
+**Ctrl + L** : Clear  
+**Ctrl + C** : Kill current running task  
+**Ctrl + D** : Exit shell  
+**Ctrl + Z** : Current running task to background  
+**Alt + F** : Move cursor forward one word  
+**Alt + B** : Move cursor back one word  
+**Esc + T** : Swap last two words before cursor  
+**Ctrl + A** : Go to the beginning of the line  
+**Ctrl + E** : Go to the end of the line  
+**Ctrl + W** : Delete word before cursor  
+**Ctrl + K** : Clear line behind cursor  
 
 
 ## Common Commands
@@ -69,6 +69,11 @@ List content:
 
 #### Change directory
 >cd
+
+#### Locate file
+>sudo apt-get install mlocate
+
+>locate filename
 
 #### Print files to screen
 >cat

@@ -26,7 +26,85 @@ Edit the file to run a script every minute:
 
 ## Example Scripts
 
-Print IP:
+### Print sum of two inputs
+```
+#!/bin/bash
+declare -i number1
+declare -i number2
+declare -i total
+echo "Enter a number..."
+        read number1
+echo "Enter next number..."
+        read number2
+total=$number1+$number2
+echo "The sum of these numbers equals " $total
+exit 0
+```
+
+### Print index in a loop
+```
+#!/bin/bash
+for i in {0..10..2}
+  do
+        echo "We've been through this $i times!"
+  done
+```
+
+### Print to multiple files
+```
+#!/bin/bash
+for filename in file1 file2 file3
+  do
+        echo "Uhn tiss..." >> $filename
+  done
+```
+
+### If condition is true ... else ...
+```
+#!/bin/bash
+echo "What is your favorite color? "
+read text1
+echo "What is your friend's favorite color? "
+read text2
+        if test $text1 != $text2; then
+                echo "I guess opposites attract."
+        else
+                echo "You two do think alike!"
+        fi
+exit 0
+```
+
+### Print counter while counter is greater than 2
+```
+#!/bin/bash
+declare -i counter
+counter=10
+        while [ $counter -gt 2 ];do
+                echo "The counter is $counter"
+                counter=counter-1
+        done
+exit 0
+```
+
+### Reply to input using a switch case
+```
+#!/bin/bash
+echo "What's the weather going to be like tomorrow?"
+read weather
+        case $weather in 
+                sunny | warm ) echo "Nice! I love it when it's $weather."
+                ;;
+                cloudy | cool ) echo "Not bad... $weather is ok."
+                ;;
+                rainy | cold ) echo "Yuk! $weather weather is depressing."
+                ;;
+                * ) echo "Sorry, I'm not familiar with that weather system."
+                ;;
+        esac
+exit 0
+```
+
+### Print IP
 ```
 #!/bin/bash
 
@@ -39,7 +117,7 @@ originalAddress=$(   ifconfig |
 echo $originalAddress >> ~/Desktop/ip.txt
 ```
 
-Print date and IP in an endless loop:
+### Print date and IP in an endless while loop
 ```
 #!/bin/bash
 

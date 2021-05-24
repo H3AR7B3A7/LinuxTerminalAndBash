@@ -45,4 +45,9 @@ Updating:
 ### NGINX
 >sudo apt-get install nginx
 
+### OpenSSH
+Server:
+>sudo apt-get install openssh-server
 
+Client:
+>sudo apt-get install openssh-client

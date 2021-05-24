@@ -37,14 +37,14 @@ Or the version of the software providing a specific command, if any:
 
 ### Information
 
-#### User name:
+#### Username:
 >whoami
 
 #### System name:
 >hostname
 
 #### Manual:
->sudo apt install man-db
+>sudo apt-get install man-db
 
 >man  
 > ls  
@@ -118,10 +118,36 @@ To drop elevation:
 >vi  
 > file.txt
 
-[Vim cheatsheet](https://vim.rtorr.com)
+*More info: [Vim cheatsheet](https://vim.rtorr.com)
 
 >nano  
 > file.txt
+
+#### Zip / Unzip file
+Zip:
+>zip name.zip filename filename ...
+
+>unzip name.zip
+
+Gzip:
+>gzip filename
+
+>gunzip filename
+
+Tar:
+>tar cvzf name.tar fileOrFoldername
+
+>tar -xvf name.tar
+
+>tar cvzf name.tar.gz fileOrFoldername
+
+>tar -xvf name.tar.gz
+
+>tar cvzf name.tgz fileOrFoldername
+
+>tar -xvf name.tgz
+
+*More info: [Zip Format Differences](https://upengareri.github.io/compression_and_archiving/)
 
 
 ## Command Chaining

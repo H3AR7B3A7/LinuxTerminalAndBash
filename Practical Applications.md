@@ -1,4 +1,4 @@
-# Example Practical Examples
+# Practical Examples
 
 ## Hosting a Website Using NGiNX
 

@@ -19,6 +19,11 @@ Before installing anything we might want to update the *advanced packaging tool*
 >sudo apt-get upgrade -y  
 >sudo apt-get dist-upgrade -y
 
+### Removing Software
+
+To remove packages installed with APT:
+>sudo apt-get remove name
+
 
 ## Common Installations
 

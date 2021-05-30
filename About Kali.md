@@ -22,3 +22,11 @@ Kali Linux has around 600 pre-installed penetration-testing programs (tools), in
 - **Burp suite** and **OWASP ZAP**: Web application security scanners
 - ...
 
+## GUI
+
+Kali Linux uses XFCE as desktop environment by default, but other options are available during the OS installation.
+
+## Terminal
+
+Kali Linux uses qTerminal by default, but other options are available during the OS installation.
+

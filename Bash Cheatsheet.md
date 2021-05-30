@@ -35,6 +35,24 @@ Or the version of the software providing a specific command, if any:
 
 ## Common Commands
 
+### System
+
+#### Exit Console
+>exit
+
+#### Reboot System
+>reboot
+
+#### Shutdown System
+>shutdown
+> -h
+
+#### Change Timezone
+>rm /etc/localtime
+
+>ln -s /usr/share/zoneinfo/Europe/Amsterdam /etc/localtime
+
+
 ### Information
 
 #### Username:

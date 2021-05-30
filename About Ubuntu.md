@@ -20,3 +20,12 @@ The installation differs significantly from the desktop version. However, it off
 like security and different software (to set up: webserver, mail server, files server, ...).
 
 OpenSSH allows for controlling the server securely from a different machine.
+
+## GUI
+
+Ubuntu uses GNOME as desktop environment by default for most installations, which is loosely based on the Apple ecosystem.
+
+## Terminal
+
+Ubuntu uses GNOME Terminal by default.
+

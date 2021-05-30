@@ -26,6 +26,15 @@ Edit the file to run a script every minute:
 
 ## Example Scripts
 
+### APT update automation
+
+```
+#!/bin/bash
+sudo apt-get udpate &&
+sudo apt-get upgrade -y &&
+sudo apt-get dist-upgrade -y
+```
+
 ### Print sum of two inputs
 ```
 #!/bin/bash

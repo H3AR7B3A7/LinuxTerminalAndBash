@@ -1,6 +1,6 @@
-# Linux Terminal
+# Linux Distributions
 
-Documentation on Linux Terminal, including cheatsheets and starter tips & tricks.
+Documentation on different Linux distributions and the terminal, including cheatsheets and starter tips & tricks.
 My hope is to grow this over time to be a useful resource for starting Linux users.
 
 ## Debian

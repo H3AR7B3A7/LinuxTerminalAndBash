@@ -27,3 +27,30 @@ In nano append at bottom of file:
 figlet -f slant "H3AR7B3A7" | lolcat
 ```
 
+## (Re-)Configure SSH
+```
+cd /etc/ssh
+sudo mkdir old_ssh_keys
+sudo mv ssh_host_* old_ssh_keys
+sudo dpkg-reconfigure openssh-server
+service ssh start
+netstat -antp
+service ssh stop
+```
+
+## Using Tor & Prochychains
+```
+nano /etc/proxychains.conf
+```
+In nano:
+- Uncomment: dynamic_chain
+- Comment-out: strict_chain
+- Append at bottom: socks5  127.0.0.1 9050
+```
+service tor start
+service tor status
+proxychains firefox www.whatismyip.com
+service tor stop
+```
+
+

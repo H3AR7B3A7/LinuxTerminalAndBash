@@ -59,7 +59,17 @@ To remove packages installed with APT:
 
 >sudo apt-get install cmatrix
 
+### Tor
 
+>sudo apt-get install tor
 
+### Proxychains
 
+>sudo apt-get install proxychains
+
+>sudo updatedb
+
+### Chkrootkit
+
+>sudo apt-get install chkrootkit
 

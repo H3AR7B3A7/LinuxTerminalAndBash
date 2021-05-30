@@ -15,8 +15,8 @@ Or by elevating ourselves to super user (not recommended):
 ### Update APT
 
 Before installing anything we might want to update the *advanced packaging tool*:
->sudo apt-get update
->sudo apt-get upgrade -y
+>sudo apt-get update  
+>sudo apt-get upgrade -y  
 >sudo apt-get dist-upgrade -y
 
 

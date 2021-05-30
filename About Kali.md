@@ -3,6 +3,12 @@
 Kali Linux is a [Debian](About%20Debian.md)-derived Linux distribution designed for digital forensics and penetration testing.
 It is maintained and funded by Offensive Security.
 
+It was developed by Mati Aharoni and Devon Kearns of Offensive Security through the rewrite of BackTrack,
+their previous information security testing Linux distribution based on Knoppix.
+Originally, it was designed with a focus on kernel auditing, from which it got its name Kernel Auditing Linux.
+The name is sometimes incorrectly assumed to come from Kali the Hindu goddess. The third core developer,
+Raphaël Hertzog, joined them as a Debian expert.
+
 ## Tools
 
 Kali Linux has around 600 pre-installed penetration-testing programs (tools), including: 

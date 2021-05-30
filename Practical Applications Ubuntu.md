@@ -1,5 +1,7 @@
 # Practical Examples
 
+An arbitrary list of practical working examples on an Ubuntu system.
+
 ## Hosting a Website Using NGiNX
 
 ```

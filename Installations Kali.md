@@ -27,5 +27,39 @@ To remove packages installed with APT:
 
 ## Common Installations
 
-### 
+### Preload
+
+>sudo apt-get install preload
+
+### Bleachbit
+
+>sudo apt-get install bleachbit
+
+### Scrub
+
+>sudo apt-get install scrub 
+
+### Lolcat
+
+>sudo apt-get install lolcat
+
+### Figlet + More Figlet Fonts
+
+>sudo apt-get install figlet
+
+>cd /usr/share
+
+>sudo git clone https://github.com/xero/figlet-fonts
+
+>sudo mv figlet-fonts/* figlet && sudo rm -rf figlet-fonts
+
+>showfigfonts
+
+### Cmatrix
+
+>sudo apt-get install cmatrix
+
+
+
+
 

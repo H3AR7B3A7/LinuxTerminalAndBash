@@ -16,6 +16,7 @@ Or by elevating ourselves to super user (not recommended):
 
 Before installing anything we might want to update the *advanced packaging tool*:
 >sudo apt-get update
+>sudo apt-get dist-upgrade -y
 
 ## Common Installations
 

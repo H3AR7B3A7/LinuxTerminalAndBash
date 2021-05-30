@@ -31,11 +31,15 @@ Or the version of the software providing a specific command, if any:
 **Ctrl + E** : Go to the end of the line  
 **Ctrl + W** : Delete word before cursor  
 **Ctrl + K** : Clear line behind cursor  
+**Ctrl + Shift + T** : Open new tab
 
 
 ## Common Commands
 
 ### System
+
+#### Open New Tab in Console
+
 
 #### Exit Console
 >exit
@@ -60,6 +64,12 @@ Or the version of the software providing a specific command, if any:
 
 #### System name:
 >hostname
+
+#### Current date:
+>date
+
+#### Calendar
+>cal
 
 #### Manual:
 >sudo apt-get install man-db

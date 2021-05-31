@@ -73,3 +73,15 @@ To remove packages installed with APT:
 
 >sudo apt-get install chkrootkit
 
+### Metagoofil
+
+> sudo apt-get install metagoofil
+
+### Libre Office
+
+>sudo apt-get install libreoffice
+
+
+
+
+

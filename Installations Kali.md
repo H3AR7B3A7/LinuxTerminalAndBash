@@ -81,6 +81,11 @@ To remove packages installed with APT:
 
 >sudo apt-get install libreoffice
 
+### Discover
+
+>git clone https://github.com/leebaird/discover.git
+
+
 
 
 

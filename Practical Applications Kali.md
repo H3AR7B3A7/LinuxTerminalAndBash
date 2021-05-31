@@ -38,7 +38,7 @@ netstat -antp
 service ssh stop
 ```
 
-## Using Tor & Prochychains
+## Using Tor & Proxychains
 ```
 nano /etc/proxychains.conf
 ```

@@ -19,6 +19,10 @@ Before installing anything we might want to update the *advanced packaging tool*
 >sudo apt-get upgrade -y  
 >sudo apt-get dist-upgrade -y
 
+### Installing DEB Packages
+
+>sudo dpkg -i path_to_deb_file.deb
+
 ### Removing Software
 
 To remove packages installed with APT:
@@ -59,3 +63,7 @@ Server:
 
 Client:
 >sudo apt-get install openssh-client
+
+### Terminator
+
+>sudo apt-get install terminator

@@ -16,10 +16,11 @@ Or the version of the software providing a specific command, if any:
 > command --v
 
 
-## Shortcuts
+## Terminal Shortcuts
 
 **Arrow Up / Down** : Navigate command history  
 **Tab** : Autocomplete  
+**Alt + F10** : Maximize window  
 **Ctrl + L** : Clear  
 **Ctrl + C** : Kill current running task  
 **Ctrl + D** : Exit shell  
@@ -31,7 +32,17 @@ Or the version of the software providing a specific command, if any:
 **Ctrl + E** : Go to the end of the line  
 **Ctrl + W** : Delete word before cursor  
 **Ctrl + K** : Clear line behind cursor  
-**Ctrl + Shift + T** : Open new tab
+**Ctrl + Shift + T** : Open new tab  
+
+
+## Terminator Specific Shortcuts
+**Ctrl + Shift + E** : Vertical split  
+**Ctrl + Shift + O** : Horizontal split  
+**Ctrl + Shift + P** : Previous screen  
+**Ctrl + Shift + N** : Next screen  
+**Ctrl + Shift + W** : Close screen  
+**Ctrl + Shift + Q** : Quit terminal  
+**Ctrl + Shift + X** : Enlarge current screen
 
 
 ## Common Commands
@@ -140,6 +151,25 @@ Or the version of the software providing a specific command, if any:
 
 #### Print file in pages
 >less
+
+Shortcuts in less:
+- Forward / backward half a screen  
+    Ctrl + D  
+    Ctrl + U
+- Beginning / end of file  
+    Shift + <  
+    Shift + >
+- Next page  
+    F
+- Mark letter  
+    m
+- Goto marked letter  
+    '
+- Search for pattern  
+    /
+
+
+
 
 #### List loaded modules
 >lsmod

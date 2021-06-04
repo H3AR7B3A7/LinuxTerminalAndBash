@@ -153,26 +153,31 @@ Or the version of the software providing a specific command, if any:
 >less
 
 Shortcuts in less:
-- Forward / backward half a screen  
+- Forward / backward one page  
+    f
+    b
+- Forward / backward half a page  
     Ctrl + D  
     Ctrl + U
 - Beginning / end of file  
     Shift + <  
     Shift + >
-- Next page  
-    F
-- Mark letter  
-    m
-- Goto marked letter  
-    '
 - Search for pattern  
     /
+- Mark letter (x)  
+    mx
+- Goto marked letter (x)  
+    'x
 
 #### Search directory tree
 >find  
 > pattern  
-> -maxdepth  
-> -mindepth
+> -maxdepth 2  
+> -mindepth 1
+> -type f
+> -perm 775
+> -user name
+> -exec cp '{}' /some_path \;
 
 #### Filter / search
 >grep  
@@ -180,28 +185,6 @@ Shortcuts in less:
 > phrase  
 > -w  
 > -i
-
-#### Edit stream
->sed  
-> -i  
-> 's/regex/replace/g' filename
-
-#### Scan for pattern and process text
->awk  
-> -F " " 'BEGIN { print "Date\t\tPrice\t\tVolume" }; NR > 1 { print $1 "\t" $2 "\t" $7 } ' filename
-```
-# AWK Script
-BEGIN {
-    FS=" ";
-    OFS="\t\t";
-    print Date\t\tPrice\t\tVolume"
-    print "----\t\t-----\t\t-----"
-};
-NR > 1 {
-    print $1, $2, $7;
-};
-```
->awk -f awk_script
 
 #### List loaded modules
 >lsmod
@@ -244,6 +227,28 @@ To drop elevation:
 
 >nano  
 > file.txt
+
+#### Edit stream
+>sed  
+> -i  
+> 's/regex/replace/g' filename
+
+#### Scan for pattern and process text
+>awk  
+> -F " " 'BEGIN { print "Date\t\tPrice\t\tVolume" }; NR > 1 { print $1 "\t" $2 "\t" $7 } ' filename
+```
+# AWK Script
+BEGIN {
+    FS=" ";
+    OFS="\t\t";
+    print Date\t\tPrice\t\tVolume"
+    print "----\t\t-----\t\t-----"
+};
+NR > 1 {
+    print $1, $2, $7;
+};
+```
+>awk -f awk_script
 
 #### Zip / Unzip file
 Zip:
@@ -309,4 +314,3 @@ Get IP-addresses from network interfaces, in the first result merge spaces, cut 
 - Standard Input (stdin): 1
 - Standard Output (stdout): 1
 - Standard Error (stderr): 2
-

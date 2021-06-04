@@ -146,7 +146,7 @@ Or the version of the software providing a specific command, if any:
 #### Print last X lines of file
 >tail  
 > file.txt  
-> -n 1
+> -n 1  
 > -f
 
 #### Print file in pages
@@ -168,8 +168,40 @@ Shortcuts in less:
 - Search for pattern  
     /
 
+#### Search directory tree
+>find  
+> pattern  
+> -maxdepth  
+> -mindepth
 
+#### Filter / search
+>grep  
+> filename  
+> phrase  
+> -w  
+> -i
 
+#### Edit stream
+>sed  
+> -i  
+> 's/regex/replace/g' filename
+
+#### Scan for pattern and process text
+>awk  
+> -F " " 'BEGIN { print "Date\t\tPrice\t\tVolume" }; NR > 1 { print $1 "\t" $2 "\t" $7 } ' filename
+```
+# AWK Script
+BEGIN {
+    FS=" ";
+    OFS="\t\t";
+    print Date\t\tPrice\t\tVolume"
+    print "----\t\t-----\t\t-----"
+};
+NR > 1 {
+    print $1, $2, $7;
+};
+```
+>awk -f awk_script
 
 #### List loaded modules
 >lsmod

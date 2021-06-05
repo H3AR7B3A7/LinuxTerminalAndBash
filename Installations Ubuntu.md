@@ -67,3 +67,20 @@ Client:
 ### Terminator
 
 >sudo apt-get install terminator
+
+### ZSH + Oh My ZSH
+
+>sudo apt-get install zsh
+
+>chsh -s $(which zsh)
+
+>sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+For more customization tips go [here](https://maxim-danilov.github.io/make-linux-terminal-great-again/).
+
+### Powerline Fonts
+
+>sudo apt-get install fonts-powerline
+
+
+

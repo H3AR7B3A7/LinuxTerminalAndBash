@@ -121,6 +121,7 @@ Or the version of the software providing a specific command, if any:
 #### List content:
 >ls  
 > /bin/p*  
+> -a  
 > -l -G  
 > -C -b  
 > -R
@@ -205,6 +206,11 @@ To drop elevation:
 >wget
 > wordpress.org/latest.tar.gz
 
+#### Creating (symbolic) link
+>ln /target name
+
+>ln -s /some/very/long/path /target
+
 #### Changing file rights
 >chmod  
 > 777 file.txt
@@ -221,6 +227,9 @@ To drop elevation:
 
 #### Edit file
 >vi  
+> file.txt
+
+>vim  
 > file.txt
 
 *More info: [Vim cheatsheet](https://vim.rtorr.com)

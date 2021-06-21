@@ -30,3 +30,5 @@ Kali Linux uses XFCE as desktop environment by default, but other options are av
 
 Kali Linux uses qTerminal by default, but other options are available during the OS installation.
 
+## Package Installer
+APT

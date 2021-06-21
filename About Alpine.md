@@ -13,5 +13,5 @@ By default, Alpine doesn't include any GUI.
 
 By default, there is no terminal, just the sh shell (no bash).
 
-## Package Installer
-APT
+## Package Manager
+APK

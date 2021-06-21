@@ -12,17 +12,40 @@ We can either elevate our command temporarily by using:
 Or by elevating ourselves to super user (not recommended):
 >sudo su
 
-### Update APT
+### Updating
 
 Before installing anything we might want to update the *advanced packaging tool*:
->sudo apt-get update  
->sudo apt-get upgrade -y  
+>sudo apt-get update
+
+Our packages:
+>sudo apt-get upgrade -y
+
+Our OS:
 >sudo apt-get dist-upgrade -y
+
+
+## Common Commands
+
+### Installing Packages
+
+> sudo apt-get install package-name package-name ...
+
+### Installing DEB Packages
+
+>sudo dpkg -i path_to_deb_file.deb
+
+### Download Packages
+
+> sudo apt-get install --download-only package-name package-name ...
 
 ### Removing Software
 
 To remove packages installed with APT:
->sudo apt-get remove name
+>sudo apt-get remove package-name package-name ...
+
+### Clean Up Downloaded Packages
+
+>sudo apt-get clean
 
 
 ## Common Installations

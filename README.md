@@ -24,4 +24,5 @@ My hope is to grow this over time to be a useful resource for starting Linux use
 
 ## Alpine (musl)
 - [About Alpine](About%20Alpine.md)
+- [Installations on Alpine](Installations%20Alpine.md)
 

@@ -18,31 +18,31 @@ Or the version of the software providing a specific command, if any:
 
 ## Terminal Shortcuts
 
-**Arrow Up / Down** : Navigate command history  
-**Tab** : Autocomplete  
-**Alt + F10** : Maximize window  
-**Ctrl + L** : Clear  
-**Ctrl + C** : Kill current running task  
-**Ctrl + D** : Exit shell  
-**Ctrl + Z** : Current running task to background  
-**Alt + F** : Move cursor forward one word  
-**Alt + B** : Move cursor back one word  
-**Esc + T** : Swap last two words before cursor  
-**Ctrl + A** : Go to the beginning of the line  
-**Ctrl + E** : Go to the end of the line  
-**Ctrl + W** : Delete word before cursor  
-**Ctrl + K** : Clear line behind cursor  
-**Ctrl + Shift + T** : Open new tab  
+<kbd>Arrow Up / Down</kbd> : Navigate command history  
+<kbd>Tab</kbd> : Autocomplete  
+<kbd>Alt</kbd> + <kbd>F10</kbd> : Maximize window  
+<kbd>Ctrl</kbd> + <kbd>L</kbd> : Clear  
+<kbd>Ctrl</kbd> + <kbd>C</kbd> : Kill current running task  
+<kbd>Ctrl</kbd> + <kbd>D</kbd> : Exit shell  
+<kbd>Ctrl</kbd> + <kbd>Z</kbd> : Current running task to background  
+<kbd>Alt</kbd> + <kbd>F</kbd> : Move cursor forward one word  
+<kbd>Alt</kbd> + <kbd>B</kbd> : Move cursor back one word  
+<kbd>Esc</kbd> + <kbd>T</kbd> : Swap last two words before cursor  
+<kbd>Ctrl</kbd> + <kbd>A</kbd> : Go to the beginning of the line  
+<kbd>Ctrl</kbd> + <kbd>E</kbd> : Go to the end of the line  
+<kbd>Ctrl</kbd> + <kbd>W</kbd> : Delete word before cursor  
+<kbd>Ctrl</kbd> + <kbd>K</kbd> : Clear line behind cursor  
+<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd> : Open new tab  
 
 
 ## Terminator Specific Shortcuts
-**Ctrl + Shift + E** : Vertical split  
-**Ctrl + Shift + O** : Horizontal split  
-**Ctrl + Shift + P** : Previous screen  
-**Ctrl + Shift + N** : Next screen  
-**Ctrl + Shift + W** : Close screen  
-**Ctrl + Shift + Q** : Quit terminal  
-**Ctrl + Shift + X** : Enlarge current screen
+<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd> : Vertical split  
+<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>O</kbd> : Horizontal split  
+<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> : Previous screen  
+<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd> : Next screen  
+<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>W</kbd> : Close screen  
+<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Q</kbd> : Quit terminal  
+<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd> : Enlarge current screen
 
 
 ## Common Commands

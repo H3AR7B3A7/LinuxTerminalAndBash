@@ -50,7 +50,7 @@ Or the version of the software providing a specific command, if any:
 ### System
 
 #### Open New Tab in Console
-
+> --tab
 
 #### Exit Console
 >exit

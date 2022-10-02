@@ -39,6 +39,7 @@ Or the version of the software providing a specific command, if any:
 <kbd>Ctrl</kbd> + <kbd>K</kbd> : Cut all behind cursor  
 <kbd>Ctrl</kbd> + <kbd>Y</kbd> : Paste  
 <kbd>Ctrl</kbd> + <kbd>X</kbd> + <kbd>E</kbd> : Edit current command in text editor  
+<kbd>Ctrl</kbd> + <kbd>R</kbd> : Search command history
 
 ## Terminator Specific Shortcuts
 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd> : Vertical split  

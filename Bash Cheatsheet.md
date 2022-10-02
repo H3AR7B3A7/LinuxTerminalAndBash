@@ -178,6 +178,14 @@ And rename:
 
 > mv filename.txt /destination/othername.txt
 
+#### Copy file
+
+> cp filename.txt /destination
+
+And rename:
+
+> cp filename.txt filename.txt.bac
+
 #### Locate file
 
 > sudo apt-get install mlocate

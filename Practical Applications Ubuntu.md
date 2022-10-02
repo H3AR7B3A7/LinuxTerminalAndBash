@@ -16,6 +16,38 @@ sudo ls /etc/nginx/sites-enabled/mysite.net
 sudo service nginx restart
 ```
 
+## Hosting a Website Using Python
+
+```
+py -m http.server
+```
+
+## Hosting a Website Using PhP
+
+```
+brew install php
+php -S 127.0.0.1:8080
+```
+
+## Hosting a Website Using NPM
+
+```
+npx http-server -p 8080
+```
+
+## Hosting a Website Using Apache
+
+```
+sudo apt install apache2
+systemctl start apache2
+```
+
+ Change the port:
+
+```
+sudo nano /etc/apache2/ports.conf
+```
+
 
 ## Connecting to Server Using SSH Key
 

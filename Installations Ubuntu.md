@@ -5,11 +5,11 @@
 When uncertain about a packet name we can use:
 >apt search name
 
-Installing files can only be done by a super user.
+Installing files can only be done by a superuser.
 We can either elevate our command temporarily by using:
 >sudo
 
-Or by elevating ourselves to super user (not recommended):
+Or by elevating ourselves to superuser (not recommended):
 >sudo su
 
 ### Updating

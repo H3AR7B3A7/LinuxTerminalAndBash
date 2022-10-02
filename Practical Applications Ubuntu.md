@@ -107,3 +107,70 @@ Remote:
 ```
 scp -r /var/www/mysite.net myServer:/var/www/mysite.net/
 ```
+
+## SSH into Alpine Docker
+
+### Create
+docker run --name remote -dit -p 22:22 alpine:latest
+
+### Stop
+docker stop remote
+
+### Start
+docker start remote
+
+### Enter
+docker exec -it remote sh
+
+### Move file to container
+docker cp foo.txt remote:/some/path/foo.txt
+
+### Move file to host
+docker cp remote:/some/path/foo.txt /host/path
+
+
+### Set up SSH
+
+#### Install OpenSSH
+apk add openssh --no-cache
+
+#### Install OpenRC
+apk add openrc --no-cache
+
+#### Generate Keys
+ssh-keygen -A
+
+#### Turn Off Password Auth
+vi /etc/ssh/sshd_config
+
+```
+PasswordAuthentication no
+```
+
+#### Add Public Key to Authorized Keys
+cat /etc/ssh/ssh_host_ecdsa_key.pub > /root/.ssh/authorized_keys
+
+#### Copu Private Key to Host
+docker cp remote:/etc/ssh/ssh_host_ecdsa_key ~/.ssh
+
+#### Touch Softlevel Because Init w/o OpenRC
+touch /run/openrc/softlevel
+
+#### Start SSHD on Remote
+rc-service sshd start
+
+#### Get IP
+sudo docker inspect -f "{{ .NetworkSettings.IPAddress }}" remote
+
+#### Connect
+ssh root@172.17.0.2
+
+#### Add to Hosts on Host
+sudo nano /etc/hosts
+
+```
+172.17.0.2       remote
+```
+
+#### Connect
+ssh root@remote

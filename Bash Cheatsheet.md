@@ -33,7 +33,12 @@ Or the version of the software providing a specific command, if any:
 <kbd>Ctrl</kbd> + <kbd>W</kbd> : Delete word before cursor  
 <kbd>Ctrl</kbd> + <kbd>K</kbd> : Clear line behind cursor  
 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd> : Open new tab  
-
+<kbd>Ctrl</kbd> + <kbd>A</kbd> : Go to start of line  
+<kbd>Ctrl</kbd> + <kbd>E</kbd> : Go to end of line  
+<kbd>Ctrl</kbd> + <kbd>U</kbd> : Cut all before cursor  
+<kbd>Ctrl</kbd> + <kbd>K</kbd> : Cut all behind cursor  
+<kbd>Ctrl</kbd> + <kbd>Y</kbd> : Paste  
+<kbd>Ctrl</kbd> + <kbd>X</kbd> + <kbd>E</kbd> : Edit current command in text editor  
 
 ## Terminator Specific Shortcuts
 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd> : Vertical split  
@@ -126,7 +131,11 @@ Or the version of the software providing a specific command, if any:
 > -C -b  
 > -R
 
+#### Aliases
+
 >ll
+
+>la
 
 >dir
 
@@ -134,7 +143,13 @@ Or the version of the software providing a specific command, if any:
 >pwd
 
 #### Change directory
+>cd /your/directory
+
 >cd
+
+>cd ..
+
+>cd -
 
 #### Locate file
 >sudo apt-get install mlocate

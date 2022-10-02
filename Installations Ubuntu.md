@@ -101,5 +101,10 @@ For more customization tips go [here](https://maxim-danilov.github.io/make-linux
 
 >sudo apt-get install fonts-powerline
 
+### RipGrep
 
+>sudo apt install ripgrep
 
+### Silver Searcher AG
+
+>sudo apt install silversearcher-ag

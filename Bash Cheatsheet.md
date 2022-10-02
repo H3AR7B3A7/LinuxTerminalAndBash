@@ -170,6 +170,14 @@ Or the version of the software providing a specific command, if any:
 
 > cd -
 
+#### Move file
+
+> mv filename.txt /destination
+
+And rename:
+
+> mv filename.txt /destination/othername.txt
+
 #### Locate file
 
 > sudo apt-get install mlocate

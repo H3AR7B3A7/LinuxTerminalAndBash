@@ -15,7 +15,6 @@ Or the version of the software providing a specific command, if any:
 > command --version  
 > command --v
 
-
 ## Terminal Shortcuts
 
 <kbd>Arrow Up / Down</kbd> : Navigate command history  
@@ -33,9 +32,16 @@ Or the version of the software providing a specific command, if any:
 <kbd>Ctrl</kbd> + <kbd>W</kbd> : Delete word before cursor  
 <kbd>Ctrl</kbd> + <kbd>K</kbd> : Clear line behind cursor  
 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd> : Open new tab  
-
+<kbd>Ctrl</kbd> + <kbd>A</kbd> : Go to start of line  
+<kbd>Ctrl</kbd> + <kbd>E</kbd> : Go to end of line  
+<kbd>Ctrl</kbd> + <kbd>U</kbd> : Cut all before cursor  
+<kbd>Ctrl</kbd> + <kbd>K</kbd> : Cut all behind cursor  
+<kbd>Ctrl</kbd> + <kbd>Y</kbd> : Paste  
+<kbd>Ctrl</kbd> + <kbd>X</kbd> + <kbd>E</kbd> : Edit current command in text editor  
+<kbd>Ctrl</kbd> + <kbd>R</kbd> : Search command history
 
 ## Terminator Specific Shortcuts
+
 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd> : Vertical split  
 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>O</kbd> : Horizontal split  
 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> : Previous screen  
@@ -44,134 +50,202 @@ Or the version of the software providing a specific command, if any:
 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Q</kbd> : Quit terminal  
 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd> : Enlarge current screen
 
-
 ## Common Commands
 
 ### System
 
 #### Open New Tab in Console
+
 > --tab
 
 #### Exit Console
->exit
+
+> exit
 
 #### Reboot System
->reboot
+
+> reboot
 
 #### Shutdown System
->shutdown
+
+> shutdown
 > -h
 
 #### Change Timezone
->rm /etc/localtime
 
->ln -s /usr/share/zoneinfo/Europe/Amsterdam /etc/localtime
+> rm /etc/localtime
 
+> ln -s /usr/share/zoneinfo/Europe/Amsterdam /etc/localtime
 
 ### Information
 
 #### Username:
->whoami
+
+> whoami
 
 #### System name:
->hostname
+
+> hostname
 
 #### Current date:
->date
+
+> date
 
 #### Calendar
->cal
+
+> cal
 
 #### Manual:
->sudo apt-get install man-db
 
->man  
+> sudo apt-get install man-db
+
+> man  
 > ls  
 > ...
 
 #### Network routing:
->ip rout show
+
+> ip rout show
 
 #### Check for DHCP server in network:
->sudo dhclient
+
+> sudo dhclient
 
 #### Lookup IP address:
->ip addr
+
+> ip addr
 
 #### Network interfaces and usage
->netstat -i
+
+> netstat -i
 
 #### Open and listening ports
->netstat -l
 
->ss -i
+> netstat -l
+
+> ss -i
 
 #### Get DNS ip
->host google.com
+
+> host google.com
 
 #### Check if network address is live
->ping 8.8.8.8
+
+> ping 8.8.8.8
 
 #### Current DNS configurations
->systemd-resolve --status
 
+> systemd-resolve --status
 
 ### Navigate & Open
 
 #### List content:
->ls  
+
+> ls  
 > /bin/p*  
 > -a  
 > -l -G  
 > -C -b  
 > -R
 
->ll
+#### Aliases
 
->dir
+> ll
+
+> la
+
+> dir
 
 #### Print working directory:
->pwd
+
+> pwd
 
 #### Change directory
->cd
+
+> cd /your/directory
+
+> cd
+
+> cd ..
+
+> cd -
+
+#### Move file
+
+> mv filename.txt /destination
+
+And rename:
+
+> mv filename.txt /destination/othername.txt
+
+#### Copy file
+
+> cp filename.txt /destination
+
+And rename:
+
+> cp filename.txt filename.txt.bac
 
 #### Locate file
->sudo apt-get install mlocate
 
->locate filename
+> sudo apt-get install mlocate
 
-#### Print files to screen
->cat
+> locate filename
+
+#### Print files to screen or files
+
+> cat
+
+> cat > filename.txt
+
+_End with control + D_
+
+> cat << EOF > filename.txt
+
+_End with EOF_
+
+### Echo to screen or file
+
+> echo "Content here..."
+
+> echo "Content here..." > filename.txt
+
+### Print to screen & file
+
+> echo "Content here..." | tee filename.txt
 
 #### Print last X lines of file
->tail  
+
+> tail  
 > file.txt  
 > -n 1  
 > -f
 
 #### Print file in pages
->less
+
+> less
 
 Shortcuts in less:
+
 - Forward / backward one page  
-    f
-    b
+  f
+  b
 - Forward / backward half a page  
-    Ctrl + D  
-    Ctrl + U
+  Ctrl + D  
+  Ctrl + U
 - Beginning / end of file  
-    Shift + <  
-    Shift + >
+  Shift + <  
+  Shift + >
 - Search for pattern  
-    /
+  /
 - Mark letter (x)  
-    mx
+  mx
 - Goto marked letter (x)  
-    'x
+  'x
 
 #### Search directory tree
->find  
+
+> find  
 > pattern  
 > -maxdepth 2  
 > -mindepth 1
@@ -181,70 +255,82 @@ Shortcuts in less:
 > -exec cp '{}' /some_path \;
 
 #### Filter / search
->grep  
+
+> grep  
 > filename  
 > phrase  
 > -w  
 > -i
 
 #### List loaded modules
->lsmod
+
+> lsmod
 
 #### Load module
->modprobe name
 
+> modprobe name
 
 ### Create & Alter
 
 #### Elevating to super user
->sudo su
+
+> sudo su
 
 To drop elevation:
->exit
+> exit
 
 #### Non-Interactive Download
->wget
+
+> wget
 > wordpress.org/latest.tar.gz
 
 #### Creating (symbolic) link
->ln /target name
 
->ln -s /some/very/long/path /target
+> ln /target name
+
+> ln -s /some/very/long/path /target
 
 #### Changing file rights
->chmod  
+
+> chmod  
 > 777 file.txt
 
 ![Chmod](img/chmod.png)
 
 #### Changing owner
->chown  
+
+> chown  
 > username
 
 #### Create file
->touch  
+
+> touch  
 > file.txt
 
 #### Edit file
->vi  
+
+> vi  
 > file.txt
 
->vim  
+> vim  
 > file.txt
 
 *More info: [Vim cheatsheet](https://vim.rtorr.com)
 
->nano  
+> nano  
 > file.txt
 
 #### Edit stream
->sed  
+
+> sed  
 > -i  
 > 's/regex/replace/g' filename
 
 #### Scan for pattern and process text
->awk  
+
+> awk  
 > -F " " 'BEGIN { print "Date\t\tPrice\t\tVolume" }; NR > 1 { print $1 "\t" $2 "\t" $7 } ' filename
+
 ```
 # AWK Script
 BEGIN {
@@ -257,66 +343,70 @@ NR > 1 {
     print $1, $2, $7;
 };
 ```
->awk -f awk_script
+
+> awk -f awk_script
 
 #### Zip / Unzip file
-Zip:
->zip name.zip filename filename ...
 
->unzip name.zip
+Zip:
+> zip name.zip filename filename ...
+
+> unzip name.zip
 
 Gzip:
->gzip filename
+> gzip filename
 
->gunzip filename
+> gunzip filename
 
 Tar:
->tar cvzf name.tar fileOrFoldername
+> tar cvzf name.tar fileOrFoldername
 
->tar -xvf name.tar
+> tar -xvf name.tar
 
->tar cvzf name.tar.gz fileOrFoldername
+> tar cvzf name.tar.gz fileOrFoldername
 
->tar -xvf name.tar.gz
+> tar -xvf name.tar.gz
 
->tar cvzf name.tgz fileOrFoldername
+> tar cvzf name.tgz fileOrFoldername
 
->tar -xvf name.tgz
+> tar -xvf name.tgz
 
 *More info: [Zip Format Differences](https://upengareri.github.io/compression_and_archiving/)
 
-
 ## Command Insertion
-List kernel module files for current kernel version.
->ls /lib/modules\`uname -r\`
 
+List kernel module files for current kernel version.
+> ls /lib/modules\`uname -r\`
 
 ## Command Chaining
 
 Append contents of group filtering only lines with username to file.
->cat /etc/group | grep name >> file
+> cat /etc/group | grep name >> file
 
 Overwrite contents of group filtering only lines with username to file.
->cat /etc/group | grep name > file
+> cat /etc/group | grep name > file
 
 Cut contents using colon as field delimiter keeping the 3d field and sorting them in natural order.
->cut -d: -f3 /etc/group | sort -n
+> cut -d: -f3 /etc/group | sort -n
 
 Cut contents using colon as field delimiter keeping the 3d field and sorting them in descending order.
->cut -d: -f3 /etc/group | sort -rn
+> cut -d: -f3 /etc/group | sort -rn
 
-Find everything in /var/log starting with syslog of type file, print with null chars for new line and individually run each with an elevated command to grant read permission to all users.
->find /var/log/syslog* -type f -print0 | xargs -0 sudo chmod a+r
+Find everything in /var/log starting with syslog of type file, print with null chars for new line and individually run
+each with an elevated command to grant read permission to all users.
+> find /var/log/syslog* -type f -print0 | xargs -0 sudo chmod a+r
 
-Find everything in /var/log starting with syslog and ending on .gz of type file, print with null chars for new line and individually run each with an elevated command to unzip.
->find /var/log/syslog*.gz -type f -print0 | xargs -0 sudo gunzip
+Find everything in /var/log starting with syslog and ending on .gz of type file, print with null chars for new line and
+individually run each with an elevated command to unzip.
+> find /var/log/syslog*.gz -type f -print0 | xargs -0 sudo gunzip
 
-Find everything in /var/log starting with syslog of type file, print with null chars for new line and individually run each to concatenate in one long string and look for matching lines for "NetworkManager" that are warnings.
->find /var/log/syslog* -type f -print0 | xargs -0 cat | grep "NetworkManager.*warn"
+Find everything in /var/log starting with syslog of type file, print with null chars for new line and individually run
+each to concatenate in one long string and look for matching lines for "NetworkManager" that are warnings.
+> find /var/log/syslog* -type f -print0 | xargs -0 cat | grep "NetworkManager.*warn"
 
-Get IP-addresses from network interfaces, in the first result merge spaces, cut in string parts on the spaces and give me the 3d string.
->ifconfig | grep "inet " | head -n 1 | tr -s ' ' | cut -d ' ' -f 3
-
+Get IP-addresses from network interfaces, in the first result merge spaces, cut in string parts on the spaces and give
+me the 3d string.
+> ifconfig | grep "inet " | head -n 1 | tr -s ' ' | cut -d ' ' -f 3
 
 ## Standard Streams
 

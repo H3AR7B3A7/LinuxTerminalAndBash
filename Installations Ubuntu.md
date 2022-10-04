@@ -3,26 +3,25 @@
 ## Before Starting
 
 When uncertain about a packet name we can use:
->apt search name
+> apt search name
 
-Installing files can only be done by a super user.
+Installing files can only be done by a superuser.
 We can either elevate our command temporarily by using:
->sudo
+> sudo
 
-Or by elevating ourselves to super user (not recommended):
->sudo su
+Or by elevating ourselves to superuser (not recommended):
+> sudo su
 
 ### Updating
 
 Before installing anything we might want to update the *advanced packaging tool*:
->sudo apt-get update  
+> sudo apt-get update
 
-Our packages:  
->sudo apt-get upgrade -y  
+Our packages:
+> sudo apt-get upgrade -y
 
 Our OS:
->sudo apt-get dist-upgrade -y
-
+> sudo apt-get dist-upgrade -y
 
 ## Common Commands
 
@@ -32,7 +31,7 @@ Our OS:
 
 ### Installing DEB Packages
 
->sudo dpkg -i path_to_deb_file.deb
+> sudo dpkg -i path_to_deb_file.deb
 
 ### Download Packages
 
@@ -41,65 +40,77 @@ Our OS:
 ### Removing Software
 
 To remove packages installed with APT:
->sudo apt-get remove package-name package-name ...
+> sudo apt-get remove package-name package-name ...
 
 ### Clean Up Downloaded Packages
 
->sudo apt-get clean
-
+> sudo apt-get clean
 
 ## Common Installations
 
 ### Git
->sudo apt-get install git
+
+> sudo apt-get install git
 
 ### Java
+
 [Download Oracle JDK for Debian](https://www.oracle.com/java/technologies/javase-downloads.html)
 
->sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk-16.0.1/bin/java 1
+> sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk-16.0.1/bin/java 1
 
->sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk-16.0.1/bin/javac 1
+> sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk-16.0.1/bin/javac 1
 
 Or just check your version and follow instructions for OpenJDK:
->java --version
+> java --version
 
 ### NodeJS & NPM
->sudo apt-get install nodejs
 
->sudo apt-get install npm
+> sudo apt-get install nodejs
+
+> sudo apt-get install npm
 
 Updating:
->sudo npm install npm@latest -g
+> sudo npm install npm@latest -g
 
->sudo npm install nodejs@latest -g
+> sudo npm install nodejs@latest -g
 
 ### NGINX
->sudo apt-get install nginx
+
+> sudo apt-get install nginx
 
 ### OpenSSH
+
 Server:
->sudo apt-get install openssh-server
+> sudo apt-get install openssh-server
 
 Client:
->sudo apt-get install openssh-client
+> sudo apt-get install openssh-client
 
 ### Terminator
 
->sudo apt-get install terminator
+> sudo apt-get install terminator
 
 ### ZSH + Oh My ZSH
 
->sudo apt-get install zsh
+> sudo apt-get install zsh
 
->chsh -s $(which zsh)
+> chsh -s $(which zsh)
 
->sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+> sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 For more customization tips go [here](https://maxim-danilov.github.io/make-linux-terminal-great-again/).
 
 ### Powerline Fonts
 
->sudo apt-get install fonts-powerline
+> sudo apt-get install fonts-powerline
+
+### RipGrep
+
+> sudo apt install ripgrep
+
+### Silver Searcher AG
+
+> sudo apt install silversearcher-ag
 
 ### TheFuck
 

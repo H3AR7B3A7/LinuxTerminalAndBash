@@ -101,5 +101,18 @@ For more customization tips go [here](https://maxim-danilov.github.io/make-linux
 
 >sudo apt-get install fonts-powerline
 
+### TheFuck
 
+> sudo apt install fuck
 
+_It is recommended that you place this command in your .bash_profile, .bashrc, .zshrc or other startup script:_
+
+```
+eval $(thefuck --alias)
+```
+
+You can use whatever you want as an alias, like for Mondays:
+
+```
+eval $(thefuck --alias FUCK)
+```

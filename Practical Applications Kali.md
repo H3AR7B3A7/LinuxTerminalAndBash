@@ -63,3 +63,13 @@ service tor stop
 
 > xfreerdp /v:targetIp /u:htb-student /p:Password
 
+## Connecting to Windows via SMB
+
+> smbclient -L 10.129.185.234 -U htb-student
+
+## Mounting to Share on a Windows System
+
+> sudo apt-get install cifs-utils
+
+> sudo mount -t cifs -o username=htb-student,password=Academy_WinFun! //ipaddoftarget/"Company Data" /home/user/Desktop/
+

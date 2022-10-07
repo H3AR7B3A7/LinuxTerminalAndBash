@@ -61,6 +61,8 @@ service tor stop
 
 ## Connecting to Windows via RDP
 
+> sudo apt install freerdp2-x11
+
 > xfreerdp /v:targetIp /u:htb-student /p:Password
 
 ## Connecting to Windows via SMB

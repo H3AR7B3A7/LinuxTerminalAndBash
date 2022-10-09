@@ -127,3 +127,10 @@ You can use whatever you want as an alias, like for Mondays:
 ```
 eval $(thefuck --alias FUCK)
 ```
+
+### FlameShot
+
+> sudo apt install flameshot
+
+_We might need to edit `/usr/share/applications/flameshot.gui` and add `gui` behind the Exec value._
+

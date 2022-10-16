@@ -1,5 +1,8 @@
 # Hardening
 
+There are a number of defensive measures we can take to secure Linux environments that
+we want to be able to connect to (such as VPS). Here are some good first steps to take:
+
 - Update system
 - Install Fail2ban
 - Working only with SSH keys
